@@ -47,10 +47,10 @@ body {
     margin-bottom: 60px;
 }
 
-.paragraph1, .paragraph2, .article, .info-font{
+.info, .article, .info-font{
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .control-font{
