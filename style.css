@@ -46,7 +46,7 @@ body {
     margin-bottom: 60px;
 }
 
-.paragraph1, .paragraph2 {
+.paragraph1, .paragraph2, .info-memo, .info-font{
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 20px;
