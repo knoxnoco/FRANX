@@ -42,14 +42,10 @@ body {
     font-weight: bold;
 }
 
-.info{
-    margin-top: 120px;
-    margin-bottom: 60px;
-}
-
 .info, .info-memo, .info-font{
     font-size: 1.1rem;
     line-height: 1.6;
+    margin-top: 60px;
     margin-bottom: 60px;
 }
 
