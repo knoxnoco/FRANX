@@ -37,7 +37,7 @@ body {
     border-bottom: 1px solid #000;
 }
 
-.nav-year, .nav-brand {
+.top-left, .top-right {
     font-size: 1.2rem;
     font-weight: bold;
 }
