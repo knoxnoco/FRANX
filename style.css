@@ -1,0 +1,97 @@
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif; 
+    background-color: #ffffff;
+    color: #000000;
+}
+
+@font-face {
+    font-family: 'Franx'; 
+    font-weight: 400; 
+    font-style: normal;
+    /* 폰트 파일이 프로젝트 루트의 /fonts/ 폴더에 있다면 이렇게 수정 */
+    src: url('/fonts/Franx-Regular.woff2') format('woff2'), 
+         url('/fonts/Franx-Regular.woff') format('woff');
+}
+
+.hero-title {
+    text-rendering: geometricPrecision; 
+    font-family: 'Franx', serif !important; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    
+    font-size: 6vw;
+}
+
+.control-font{
+    text-rendering: geometricPrecision; 
+    font-family: 'Franx', serif !important; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    
+    font-size: 6vw;
+}
+
+.top-nav {
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #000;
+}
+
+.nav-year, .nav-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.info{
+    margin-bottom: 60px;
+}
+
+.paragraph1{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.paragraph2{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.control-font{
+    background-color: #f8f9fa; /* 배경색 */
+    padding: 60px 0;
+    margin-top: 80px;
+    border-top: 1px solid #eee;
+}
+
+.repeating-text p {
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.1); /* 투명도 조절 */
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.copyright-text {
+    font-size: 0.85rem;       /* 본문보다 약간 작게 */
+    color: #888;              /* 회색 글씨 */
+    margin: 0;                /* 불필요한 여백 제거 */
+    font-weight: 400;
+}
