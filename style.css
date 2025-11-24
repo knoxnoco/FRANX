@@ -5,7 +5,7 @@ body {
 }
 
 @font-face {
-    font-family: 'Franx', serif; 
+    font-family: 'Franx'; 
     font-weight: 400; 
     font-style: normal;
     /* 폰트 파일이 프로젝트 루트의 /fonts/ 폴더에 있다면 이렇게 수정 */
@@ -42,11 +42,24 @@ body {
 }
 
 .info, .info-memo, .info-font{
+margin-top: 60px;
+margin-bottom: 60px;
+}
+
+.info p, 
+.info-memo p, 
+.info-font p{
     font-family: "Roboto", sans-serif !important; 
     font-size: 1.1rem;
     line-height: 1.6;
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+.info-font h4 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .control-font{
