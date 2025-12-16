@@ -1,13 +1,16 @@
-body {
-    font-family: "Roboto", sans-serif; 
-    background-color: #ffffff;
-    color: #000000;
-}
+.body {font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      }
 
 @font-face {
     font-family: 'Franx'; 
     font-weight: 400; 
     font-style: normal;
+    /* 폰트 파일이 프로젝트 루트의 /fonts/ 폴더에 있다면 이렇게 수정 */
     src: url('/fonts/Franx-Regular.woff2') format('woff2'), 
          url('/fonts/Franx-Regular.woff') format('woff');
 }
@@ -17,7 +20,7 @@ body {
     font-family: 'Franx', serif !important; 
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale; 
-    font-size: 12vw;
+    font-size: 6rem;
 }
 
 .control-font{
@@ -34,39 +37,23 @@ body {
     border-bottom: 1px solid #000;
 }
 
-.top-left, .top-right {
+.nav-year, .nav-brand {
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.info, .info-memo, .info-font{
-    margin-top: 60px;
+.info{
     margin-bottom: 60px;
 }
 
-.info p, 
-.info-memo p, 
-.info-font p{
-    font-family: "Roboto", sans-serif !important; 
-    font-weight: 400 !important;
+.paragraph{
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-top: 0 !important;
-    margin-bottom: 60px !important;
-}
-
-.info-font h4 {
-    font-family: "Roboto", sans-serif !important;
-    font-weight: 400 !important;
-    font-size: 1.1rem !important;
-    line-height: 1.6;
-    margin-top: 60px !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 20px;
 }
 
 .control-font{
-    font-family: 'Franx'; 
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* 배경색 */
     padding: 60px 0;
     margin-top: 80px;
     border-top: 1px solid #eee;
@@ -75,16 +62,35 @@ body {
 .repeating-text p {
     font-size: 3rem;
     font-weight: 900;
-    color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.1); /* 투명도 조절 */
     margin: 0;
     line-height: 1;
     text-transform: uppercase;
 }
 
+#content-area {
+    font-size: 5rem; /* 기본 폰트 크기 설정 (Bootstrap 기본값 16px) */
+    font-family: 'Franx', serif;
+    color: #000000;
+    line-height: 1.6;
+    transition: font-size 0.2s ease; /* 부드러운 전환 효과 */
+    min-height: 200px; /* 미리보기 영역 확보 */
+}
+
+#btn-outline-dark {
+    background-color: var(--bs-primary); /* 부트스트랩 기본 색상 사용 */
+    color: var(--bs-btn-active-color); /* 활성화된 버튼의 글자 색상 */
+}
 
 .copyright-text {
     font-size: 0.85rem;       /* 본문보다 약간 작게 */
     color: #888;              /* 회색 글씨 */
     margin: 0;                /* 불필요한 여백 제거 */
     font-weight: 400;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+
 }
